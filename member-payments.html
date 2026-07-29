@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments | Muscle Monk Gymnasium</title>
+    <link rel="stylesheet" href="member.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="admin-layout">
+
+        <aside class="sidebar">
+            <div class="sidebar-logo">Muscle Monk</div>
+            <ul class="sidebar-links">
+                <li><a href="member-dashboard.html"><i class='bx bx-grid-alt'></i> Dashboard</a></li>
+                <li><a href="member-membership.html"><i class='bx bx-id-card'></i> Membership</a></li>
+                <li><a href="member-workout.html"><i class='bx bx-dumbbell'></i> Workout Planner</a></li>
+                <li class="active"><a href="member-payments.html"><i class='bx bx-credit-card'></i> Payments</a></li>
+                <li><a href="member-profile.html"><i class='bx bx-user'></i> Profile</a></li>
+                <li><a href="member-settings.html"><i class='bx bx-cog'></i> Settings</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <h1>Payments</h1>
+                <div class="admin-profile">
+                    <div class="avatar">AS</div>
+                    <div class="profile-text">
+                        <p class="profile-name">Aarav S.</p>
+                        <p class="profile-role">Member</p>
+                    </div>
+                </div>
+            </header>
+
+            <div class="payments-split">
+
+                <div class="pay-card">
+                    <p class="pay-label">Pay for membership</p>
+                    <p class="pay-amount">₹10,000<span>/ 12 months</span></p>
+                    <p class="pay-sub">Renew your plan seamlessly</p>
+                    <button class="pay-btn"><i class='bx bx-refresh'></i> Pay &amp; renew</button>
+                </div>
+
+                <div class="upgrade-card">
+                    <p class="upgrade-label">Upgrade</p>
+                    <h3>Get more from Muscle Monk</h3>
+                    <p class="upgrade-sub">Switch to Yearly + for premium perks</p>
+                    <a href="member-membership.html" class="upgrade-btn"><i class='bx bx-up-arrow-alt'></i> Upgrade Plan</a>
+                </div>
+
+            </div>
+
+            <div class="table-card">
+                <div class="payment-history-header">
+                    <h3><i class='bx bx-credit-card'></i> Payment History</h3>
+                    <span class="count-badge">1</span>
+                </div>
+
+                <table class="members-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Plan</th>
+                            <th>Method</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2026-06-01</td>
+                            <td>Yearly</td>
+                            <td><span class="method-badge">UPI</span></td>
+                            <td>₹10,000</td>
+                            <td><span class="status active">Paid</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+
+    </div>
+</body>
+</html>
