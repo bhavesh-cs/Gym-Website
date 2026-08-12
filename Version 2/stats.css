@@ -1,0 +1,48 @@
+.stats{
+    width:85%;
+    margin:-70px auto 100px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    position:relative;
+    z-index:10;
+}
+
+.stat-card{
+    background:#161616;
+    padding:35px 25px;
+    border-radius:20px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.35s;
+}
+
+.stat-card:hover{
+    transform:translateY(-10px);
+    border-color:#a3ff12;
+}
+
+.stat-card h2{
+    color:#a3ff12;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    color:#bdbdbd;
+    font-size:16px;
+}
+
+@media(max-width:900px){
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:600px){
+    .stats{
+        grid-template-columns:1fr;
+        margin-top:-40px;
+    }
+}
