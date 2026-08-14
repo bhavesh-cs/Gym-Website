@@ -1,0 +1,196 @@
+.membership{
+    padding:100px 8%;
+    background:#111;
+}
+
+.membership-header{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 70px;
+}
+
+.membership-header span{
+    color:#a3ff12;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+.membership-header h2{
+    font-size:48px;
+    color:#fff;
+    margin:18px 0;
+}
+
+.membership-header p{
+    color:#bdbdbd;
+    line-height:1.8;
+}
+
+.membership-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+}
+
+.membership-card{
+    position:relative;
+
+    background:#1a1a1a;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:40px 35px;
+
+    transition:.35s;
+
+    overflow:hidden;
+}
+
+.membership-card:hover{
+    transform:translateY(-12px);
+
+    border-color:#a3ff12;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+}
+
+.membership-card.popular{
+
+    border:2px solid #a3ff12;
+
+    transform:scale(1.05);
+
+}
+
+.membership-card.popular:hover{
+
+    transform:scale(1.08);
+
+}
+
+.popular-badge{
+
+    position:absolute;
+
+    top:22px;
+
+    right:-42px;
+
+    background:#a3ff12;
+
+    color:#111;
+
+    width:170px;
+
+    text-align:center;
+
+    padding:8px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    transform:rotate(45deg);
+
+}
+
+.membership-card h3{
+
+    color:white;
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
+}
+
+.membership-card h2{
+
+    color:#a3ff12;
+
+    font-size:48px;
+
+    margin-bottom:30px;
+
+}
+
+.membership-card h2 span{
+
+    font-size:17px;
+
+    color:#bdbdbd;
+
+    margin-left:6px;
+
+}
+
+.membership-card ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    margin-bottom:40px;
+
+}
+
+.membership-card li{
+
+    color:#d8d8d8;
+
+    font-size:16px;
+
+    list-style:none;
+
+}
+
+.membership-card button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#a3ff12;
+
+    color:#111;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.membership-card button:hover{
+
+    background:#90e600;
+
+}
+
+@media(max-width:768px){
+
+    .membership-header h2{
+
+        font-size:36px;
+
+    }
+
+    .membership-card.popular{
+
+        transform:none;
+
+    }
+
+}
